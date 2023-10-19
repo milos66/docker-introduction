@@ -15,7 +15,7 @@ services:
       - app-network
   docker-example-app:
     container_name: docker-example-application
-    image: docker-example-app
+    image: docker-example-app:0.0.1-SNAPSHOT
     environment:
       HELLO_MESSAGE: Hello message from docker compose
       DATABASE_URL: jdbc:postgresql://db:5432/postgres
